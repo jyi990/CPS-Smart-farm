@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6B657"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/todayYield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/today_yield"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todayYieldConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/todayYield"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yieldNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/yield_number"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toEndOf="@+id/todayYieldConnect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperatureControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/temperature_control"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayYield" />
+
+    <TextView
+        android:id="@+id/temperatureControlConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureControl"
+        app:layout_constraintTop_toBottomOf="@+id/todayYieldConnect" />
+
+    <TextView
+        android:id="@+id/temperatureNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/temperature_number"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toEndOf="@+id/temperatureControlConnect"
+        app:layout_constraintTop_toBottomOf="@+id/yieldNumber" />
+
+    <TextView
+        android:id="@+id/temperatureControlTommorw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/temperature_control_tommorow"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureControl" />
+
+    <TextView
+        android:id="@+id/temperatureControlTommorrowCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="textView"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureControlTommorw"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureControlConnect" />
+
+    <TextView
+        android:id="@+id/temperatureNumber2"
+        android:layout_width="25dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/temperature_number"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/temperatureControlTommorrowCon"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureNumber" />
+
+    <TextView
+        android:id="@+id/prdiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/prediction"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toEndOf="@+id/temperatureNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureNumber" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="98dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home" />
+
+        <Button
+            android:id="@+id/machineLearningButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/machine_learning" />
+
+        <Button
+            android:id="@+id/reinforcementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reinforcement_learning" />
+
+        <Button
+            android:id="@+id/userButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/user" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
